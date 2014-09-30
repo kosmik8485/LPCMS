@@ -1,0 +1,9 @@
+DB:
+  user:
+  password:
+  host:
+  driver: sqlite3
+  name: dev.db
+TMPL:
+  
+  

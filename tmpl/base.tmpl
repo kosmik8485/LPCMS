@@ -1,0 +1,14 @@
+[%# База для страницы, представления используються для удобства обращения к шаблонам в теории можно и без них. %]
+[% TRY %]
+[% VIEW layout(prefix=>'layout/',suffix=>'.tmpl' ; END %]
+<!doctype html>
+[% layout.head %]
+<body>
+  [%
+	layout.header ;
+	layout.content ;
+	layout.footer 
+  %]
+</body>
+</html>
+[% CATCH ; CLEAR ; INCLUDE error.tmpl ; END %]
